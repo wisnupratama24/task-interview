@@ -10,3 +10,15 @@ burger.addEventListener("click", () => {
     menu.classList.add("hidden");
   }
 });
+
+window.onscroll = function () {
+  scrollFunction();
+};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+    document.querySelector("nav").classList.add("bg-gray-200");
+  } else {
+    document.querySelector("nav").classList.remove("bg-gray-200");
+  }
+}
