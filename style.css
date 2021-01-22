@@ -31197,11 +31197,20 @@ video {
     font-size: 0.875rem;
     line-height: 1.25rem;
     margin-top: 0px;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    width: auto;
+  }
+}
+
+@media (min-width: 1024px){
+  .btn-hero{
     padding-top: 1rem;
     padding-bottom: 1rem;
     padding-left: 1.25rem;
     padding-right: 1.25rem;
-    width: auto;
   }
 }
 
