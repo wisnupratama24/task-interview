@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qiscus</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body class="bg-gray-100">
+    <nav class="bg-gray-200">
+        <div class="flex justify-between items-center h-20 xl:w-10/12 w-full xl:px-0 px-4 xl:mx-auto">
+            <div class="border bg-green-200 py-2 px-6">
+                logo
+            </div>
+            <div class="w-3/5 xl:block hidden" >
+                <ul class="flex justify-evenly">
+                    <li class="hover-nav">
+                        <a href="/produk"> Produk </a>
+                    </li>
+                    <li class="hover-nav">
+                        <a href="/harga"> Harga </a>
+                    </li>
+                    <li class="hover-nav">
+                        <a href="/docs"> Docs </a>
+                    </li>
+                    <li class="hover-nav">
+                        <a href="/kontak"> Kontak </a>
+                    </li>
+                    <li class="hover-nav">
+                        <a href="/karir"> Karir </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="xl:block hidden">
+                <ul class="flex items-center justify-between">
+                    <li class="pr-5">Indonesia</li>
+                    <li class="pr-5">Masuk</li>
+                    <li class="pr-5">
+                        <button class="py-2 px-4 text-white rounded-lg bg-indigo-800"> Daftar </button>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="xl:hidden block  cursor-pointer" id="hamburger">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+            </div>
+
+        </div>
+        <div class="xl:hidden flex-1 block bg-gray-200" id="menu">
+            <ul class="block ml-4">
+                <li class="pt-4 hover-nav">
+                    <a href="/produk"> Produk </a>
+                </li>
+                <li class="pt-4 hover-nav">
+                    <a href="/harga"> Harga </a>
+                </li>
+                <li class="pt-4 hover-nav">
+                    <a href="/docs"> Docs </a>
+                </li>
+                <li class="pt-4 hover-nav">
+                    <a href="/kontak"> Kontak </a>
+                </li>
+                <li class="pt-4">
+                    <a href="/karir"> Karir </a>
+                </li>
+                <li class="pt-8">
+                    <button href="/kontak"> Indonesia </button>
+                </li>
+                <li class="pt-4">
+                    <a href="/login"> Masuk </a>
+                </li>
+                <li class="py-6">
+                    <button class="md:py-2 lg:px-4 py-1 px-2 text-base rounded-md md:px-3 text-white lg:rounded-lg bg-indigo-800"> Daftar </button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+  
+    <main>
+
+        <section class="hero mt-20">
+            <div class="flex justify-evenly">
+                <div class="hero-title lg:w-2/5 w-4/5">
+                    <h2 class="md:text-5xl text-3xl text-indigo-900 font-semibold  flex">
+                        Chat dengan pelanggan di mana pun mereka berada
+                    </h2>
+                    <p class="font-light md:pt-10 pt-5 leading-relaxed text-gray-600 md:text-base text-sm">
+                        Bangun interaksi dengan konsumen melalui WhatsApp, LINE, Facebook Messenger dan berbagai aplikasi perpesanan lainnya melalui satu dashboard perpesanan terpusat.
+                    </p>
+                    <div class="hero-button pt-8 md:flex md:w-4/5 w-full">
+                        <button class="btn-hero text-gray-200 bg-indigo-900 mr-3"> Coba Gratis </button>
+                        <button class="btn-hero text-indigo-900 bg-indigo-100"> Hubungi Kami </button>
+                    </div>
+                </div>
+                <div class="w-2/5 lg:block hidden border h-auto bg-gray-200">
+                    ini image hero
+                </div>
+            </div>
+        </section>
+
+        <section class="client mt-24">
+            <h5 class="md:text-lg text-base font-semibold text-indigo-900 text-center">Dipercaya Oleh Industri Unggulan</h5>
+            <div class="grid md:grid-cols-4 lg:grid-cols-6 grid-cols-2 md:gap-8 gap-6 w-10/12 md:w-11/12 mx-auto mt-10">
+                <div class="client-img"></div>
+                <div class="client-img"></div>
+                <div class="client-img"></div>
+                <div class="client-img"></div>
+                <div class="client-img"></div>
+                <div class="client-img"></div>
+                <div class="client-img"></div>
+                <div class="client-img"></div>
+                <div class="client-img"></div>
+                <div class="client-img"></div>
+                <div class="client-img"></div>
+                <div class="client-img"></div>
+                <div class="client-img"></div>
+                <div class="client-img"></div>
+                <div class="client-img"></div>
+                <div class="client-img"></div>
+                <div class="client-img"></div>
+                <div class="client-img"></div>
+                <div class="client-img"></div>
+                <div class="client-img"></div>
+                <div class="client-img"></div>
+                <div class="client-img"></div>
+                <div class="client-img"></div>
+                <div class="client-img"></div>
+            </div>
+            <h5 class="md:text-lg mt-10 text-base font-medium text-green-700 text-center">Dan masih banyak lagi...</h5>
+        </section>
+
+        <section class="fitur bg-indigo-100 mt-24 p-20">
+            <h2 class="text-center text-4xl text-indigo-900 font-semibold">Fitur Kami</h2>
+            <div class="xl:flex  mt-10 w-full mx-auto " >
+                <div class="xl:grid grid-cols-1 w-full">
+                    <div class="xl:flex mx-auto items-start text-center">
+                        <div class="fitur-icon">
+                        </div>
+                        <div class="fitur-meta xl:text-left">
+                            <h4 class="fitur-title">Integrasikan pesan dari berbagai aplikasi</h4>
+                            <p class="fitur-subtitle">
+                                Integrasikan seluruh pesan dari WhatsApp, Line, Telegram, dan Live Chat dengan mudah dan cepat.
+                            </p>
+                        </div>
+                        <div class="fitur-image"></div>
+                    </div>
+                    <div class="xl:flex mx-auto items-start text-center md:block hidden">
+                        <div class="fitur-icon">
+                        </div>
+                        <div class="fitur-meta xl:text-left">
+                            <h4 class="fitur-title">Alokasi Customer Service</h4>
+                            <p class="fitur-subtitle">
+                                Bagikan pesan yang masuk kepada para agent customer service secara otomatis.
+                            </p>
+                        </div>
+                        <div class="fitur-image"></div>
+                    </div>
+                    <div class="xl:flex mx-auto items-start text-center md:block hidden">
+                        <div class="fitur-icon">
+                        </div>
+                        <div class="fitur-meta xl:text-left">
+                            <h4 class="fitur-title">Pesan Template</h4>
+                            <p class="fitur-subtitle">
+                                Atur pesan yang berulang menjadi template, tingkatkan efisiensi dan akurasi dalam melayani konsumen.
+                            </p>
+                        </div>
+                        <div class="fitur-image"></div>
+                    </div>
+                </div>
+                <div class="xl:block hidden h-auto bg-gray-200 w-4/5 mx-auto">
+                </div>
+                <div class="grid grid-cols-1 ml-8">
+                    <div class="xl:flex mx-auto items-start text-center md:block hidden">
+                        <div class="xl:hidden md:block hidden mx-auto bg-gray-300 h-16 w-16 mt-2">
+                        </div>
+                        <div class="fitur-meta xl:text-right">
+                            <h4 class="fitur-title">Pengaturan Jam Operasional</h4>
+                            <p class="fitur-subtitle">
+                                Tentukan jam operasional bisnis Anda dan siapkan balasan otomatis untuk menanggapi pesan konsumen yang masuk di luar jam operasional
+                            </p>
+                        </div>
+                        <div class="xl:block hidden  bg-gray-300 h-16 w-16 mt-2">
+                        </div>
+                        <div class="fitur-image"></div>
+                    </div>
+                    <div class="xl:flex mx-auto items-start text-center md:block hidden my-10">
+                        <div class="xl:hidden md:block hidden mx-auto border bg-gray-300 h-16 w-16 mt-2">
+                        </div>
+                        <div class="fitur-meta xl:text-right">
+                            <h4 class="fitur-title">Balasan Otomatis</h4>
+                            <p class="fitur-subtitle">
+                                Siapkan jawaban otomatis untuk konsumen ketika mereka sedang menunggu balasan langsung dari agent customer service
+                            </p>
+                        </div>
+                        <div class="xl:block hidden border bg-gray-300 h-16 w-16 mt-2">
+                        </div>
+                        <div class="fitur-image"></div>
+                    </div>
+                    <div class="xl:flex mx-auto items-start text-center md:block hidden">
+                        <div class="xl:hidden md:block hidden mx-auto border bg-gray-300 h-16 w-16 mt-2">
+                        </div>
+                        <div class="fitur-meta xl:text-right">
+                            <h4 class="fitur-title">Analitik</h4>
+                            <p class="fitur-subtitle">
+                                Dapatkan metrik yang akurat, mudah, dan cepat. Selalu pantau kinerja agent dan metrik penting lainnya.
+                            </p>
+                        </div>
+                        <div class="xl:block hidden border bg-gray-300 h-16 w-16 mt-2">
+                        </div>
+                        <div class="fitur-image"></div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="hero mt-20">
+            <div class="grid px-16 gap-x-10 mx-auto lg:grid-cols-2 grid-cols-1">
+                <div class="block border lg:h-auto h-48 lg:mb-0 mb-10 bg-gray-200">
+                    ini image
+                </div>
+                <div class="hero-title lg:w-4/5">
+                    <h2 class="md:text-4xl text-3xl text-indigo-900 font-semibold  flex">
+                        Memiliki multichannel chat adalah langkah yang tepat!
+                    </h2>
+                    <p class="font-light md:pt-10 pt-5 leading-relaxed text-gray-600 md:text-base text-sm">
+                        WhatsApp, Messenger, Instagram, Line dan berbagai aplikasi chat lainnya merupakan platform yang banyak digunakan konsumen Anda. Memberikan kemudahan untuk mereka menghubungi bisnis Anda melalui aplikasi chat ini sangatlah penting untuk menciptakan CX (Customer Experience) yang relevan.
+                    </p>
+                    <div class="hero-button pt-8 md:flex md:w-4/5 w-full">
+                        <button class="btn-hero text-gray-200 bg-indigo-900 mr-3"> Coba Gratis </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="satu-untuk-semua text-center mt-20 bg-indigo-100 lg:h-96 w-full hidden lg:block">
+            <h1 class="text-4xl pt-10 pb-5 font-bold text-indigo-900">Satu untuk Semua</h1>
+            <p class="text-sm w-10/12 mx-auto font-light">Berikan konsumen kesempatan untuk menghubungi bisnis Anda melalui aplikasi chat yang berbeda. Gunakan fitur integrasi saluran konsumen di Multichannel Chat untuk terhubung dengan aplikasi chat lainnya.</p>
+        </section>
+
+        <section class="contoh-penggunaan text-center mt-20 w-full">
+            <h1 class="md:text-4xl text-2xl pt-10 pb-5 font-bold text-indigo-900">Contoh Penggunaan</h1>
+            <p class="md:text-lg text-sm w-8/12 lg:w-6/12 mx-auto font-light">Gunakan teknologi dan sistem perpesanan kami untuk membantu aktivitas harian bisnis Anda, termasuk menangani pelanggan.
+            </p>
+            <div class="grid lg:grid-cols-3 mx-auto w-11/12 mt-16">
+                <div class="md:ml-16 ml-0 text-center md:text-left">
+                    <div class="bg-gray-200 md:mx-0 mx-auto h-16 w-16"></div>
+                    <div class="penggunaan-meta md:h-auto lg:h-32">
+                        <h3 class="text-lg text-indigo-900 font-semibold my-3">Customer Service</h3>
+                        <p class="lg:mb-0 mb-5 font-light mx-auto md:mx-0 text-sm w-10/12">Interaksi langsung dengan konsumen  melalui aplikasi bisnis Anda dan berbagai aplikasi chat mainstream.</p>
+                    </div>
+                    <a href="/" class="text-sm text-indigo-600 ">Pelajari Selengkapnya...</a>
+                </div>
+                <div class="lg:ml-8 lg:my-0 md:my-8 md:ml-16 text-left hidden md:block">
+                    <div class="bg-gray-200 h-16 w-16"></div>
+                    <div class="penggunaan-meta md:h-auto lg:h-32">
+                        <h3 class="text-lg text-indigo-900 font-semibold my-3">In-app Chat</h3>
+                        <p class="lg:mb-0 mb-5 font-light text-sm w-10/12">Chat SDK akan membantu membangun fitur chat di dalam aplikasi bisnis Anda..</p>
+                    </div>
+                    <a href="/" class="text-sm text-indigo-600 ">Pelajari Selengkapnya...</a>
+                </div>
+                <div class="md:ml-16 lg:ml-0 text-left hidden md:block">
+                    <div class="bg-gray-200 h-16 w-16"></div>
+                    <div class="penggunaan-meta md:h-auto lg:h-32">
+                        <h3 class="text-lg text-indigo-900 font-semibold my-3">Closed Group Messenger</h3>
+                        <p class="lg:mb-0 mb-5 font-light text-sm w-10/12">Tingkatkan kolaborasi tim bisnis Anda dengan menghadirkan aplikasi chat yang aman.</p>
+                    </div>
+                    <a href="/" class="text-sm text-indigo-600 ">Pelajari Selengkapnya...</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="believe mt-20 py-20 bg-indigo-200">
+            <div class="grid gap-x-10 mx-auto w-10/12 lg:grid-cols-2 grid-cols-1">
+                <div class="hero-title lg:w-full lg:text-left text-center">
+                    <h2 class="md:text-4xl text-3xl text-indigo-900 font-semibold  flex">
+                        Dipercaya oleh Banyak Bisnis
+                    </h2>
+                    <p class="font-light md:pt-10 pt-5 leading-relaxed text-gray-600 md:text-base text-sm">
+                        Teknologi kami telah dipercaya oleh banyak bisnis dari berbagai industri. Sekarang, saatnya bisnis Anda!
+                    </p>
+                </div>
+                <div class="border mt-10 lg:mt-0 lg:h-auto h-48 lg:mb-0 mb-10 bg-gray-200">
+                    ini carousel
+                </div>
+            </div>
+        </section>
+
+        <section class="mt-20 text-center p-10">
+            <div class="mx-auto w-10/12 lg:w-8/12">
+                <h3 class="font-semibold md:text-4xl text-2xl text-indigo-900 ">Tingkatkan Customer Experience (CX) bisnis Anda Sekarang!</h3>
+                <p class="mt-10 md:text-base text-sm">Berikan pengalaman transaksi terbaik untuk konsumen Anda. Tentukan solusinya sekarang! Pilih paket anda dan siap untuk mulai!</p>
+            </div>
+            
+            <div class="meta-tingkatkan grid md:grid-cols-2 gap-10 grid-cols-1 mt-8">
+                <div class="border bg-gray-200 p-10">
+                    <div class="border bg-white h-24 w-24 mx-auto">
+                    </div>
+                    <h5 class="my-5 font-medium">Multichannel Chat</h5>
+                    <p class="font-light mb-5">
+                        Cara mudah mengintegrasikan seluruh layanan pesan instan melalui satu dashboard tanpa harus membuka banyak platform dan aplikasi.
+                    </p>
+                    
+                <a href="/" class="text-sm text-indigo-600 ">Hubungkan semua chanel</a>
+                </div>
+                <div class="border bg-gray-200 p-10">
+                    <div class="border bg-white h-24 w-24 mx-auto">
+
+                    </div>
+                    <h5 class="my-5 font-medium">Qiscus SDK Chat</h5>
+                    <p class="font-light mb-5">
+                        Ciptakan in-app chat dengan lebih mudah bersama Qiscus SDK Chat
+                    </p>
+                    <a href="/" class="text-sm text-indigo-600 ">Dapatkan in-app chat sekarang</a>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <footer class="pt-20 bg-indigo-800">
+        <div class="grid grid-cols-2 gap-8 xl:grid-cols-5 w-10/12 mx-auto">
+            <div class="col-span-2 xl:col-span-1 ">
+                <h5 class="text-white">qiscus</h5>
+            </div>
+            <div class="text-white text-sm font-light">
+                <ul class="leading-10 opacity-80">
+                    <li class="font-bold">Produk Kami</li>
+                    <li>Multichannel Chat</li>
+                    <li>In-App Chat SDK</li>
+                    <li>WhatsApp Business API</li>
+                </ul>
+            </div>
+            <div class="text-white text-sm font-light">
+                <ul class="leading-10 opacity-80">
+                    <li class="font-bold">Dokumentasi</li>
+                    <li>Multichannel Chat</li>
+                    <li>In-App Chat SDK</li>
+                </ul>
+            </div>
+            <div class="text-white text-sm font-light">
+                <ul class="leading-10 opacity-80">
+                    <li class="font-bold">Bantuan</li>
+                    <li>Kontak Sales</li>
+                    <li>Pusat Bantuan</li>
+                    <li>White Paper
+                    </li>
+                </ul>
+            </div>
+            <div class="text-white text-sm font-light">
+                <ul class="leading-10 opacity-80">
+                    <li class="font-bold">Tentang Kami</li>
+                    <li>Pers & Media</li>
+                    <li>Kebijakan Privasi</li>
+                    <li>Persyaratan Layanan</li>
+                    <li>Karir</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="grid xl:grid-cols-5 w-10/12 mx-auto gap-8">
+            <div class="col-span-1 flex justify-between">
+                <div class="h-6 w-6 bg-gray-200"></div>
+                <div class="h-6 w-6 bg-gray-200"></div>
+                <div class="h-6 w-6 bg-gray-200"></div>
+                <div class="h-6 w-6 bg-gray-200"></div>
+                <div class="h-6 w-6 bg-gray-200"></div>
+            </div>
+            <div class="col-span-2 text-white font-light opacity-80">
+                <h4 class="font-medium">Singapore:</h4>
+                <p class="text-sm">1 Coleman Street, #10-06 The Adelphi, Singapore 179803 </p>
+            </div>
+            <div class="col-span-2 text-white font-light opacity-80">
+                <h4 class="font-medium">Indonesia:</h4>
+                <p class="text-sm">CoHive 101 8th Floor, South Jakarta 12950</p>
+            </div>
+        </div>
+
+        <div class="text-center opacity-80 p-5 mt-10 bg-indigo-900 text-gray-200">
+            qiscus
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="index.js"></script>
+</body>
+</html>
